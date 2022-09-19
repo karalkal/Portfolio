@@ -41,20 +41,22 @@
     <!-- Icon Bar (Sidebar - hidden on small screens) -->
     <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
         <!-- Avatar image in top left corner -->
-        <img src="images/portrait-small.JPG" style="width:100%">
-        <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+        <img src="images/logo4.svg" style="width:100%">
+        <a href="#" class="w3-bar-item w3-button w3-padding-large w3-darker-grey">
+            <!-- <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black"> -->
+
             <i class="fa fa-home w3-xxlarge"></i>
             <p>HOME</p>
         </a>
-        <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+        <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-darker-grey">
             <i class="fa fa-user w3-xxlarge"></i>
             <p>ABOUT</p>
         </a>
-        <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-            <i class="fa fa-eye w3-xxlarge"></i>
-            <p>PHOTOS</p>
+        <a href="#projects" class="w3-bar-item w3-button w3-padding-large w3-darker-grey">
+            <i class="fa fa-cubes w3-xxlarge"></i>
+            <p>PROJECTS</p>
         </a>
-        <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+        <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-darker-grey">
             <i class="fa fa-envelope w3-xxlarge"></i>
             <p>CONTACT</p>
         </a>
@@ -65,7 +67,7 @@
         <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
             <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
             <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
-            <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+            <a href="#projects" class="w3-bar-item w3-button" style="width:25% !important">PROJECTS</a>
             <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
         </div>
     </div>
@@ -107,99 +109,51 @@
                     style="color: #690000; font-size: 1.3em; margin-right: 8px;"></i>
                 Passionate about music, cinema, winter and water sports, travelling, economy and politics
             </p>
-            <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
-            <p class="w3-wide">Vanilla JS</p>
-            <div class="w3-white">
-                <div class="w3-dark-grey" style="height:28px;width:95%"></div>
-            </div>
-            <p class="w3-wide">Python</p>
-            <div class="w3-white">
-                <div class="w3-dark-grey" style="height:28px;width:85%"></div>
-            </div>
-            <p class="w3-wide">HTML / CSS</p>
-            <div class="w3-white">
-                <div class="w3-dark-grey" style="height:28px;width:80%"></div>
-            </div><br>
+        </div>
 
-            <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
-                <div class="w3-quarter w3-section">
-                    <span class="w3-xlarge">11+</span><br>
-                    Partners
+        <!-- Skills section -->
+        <div class="w3-padding-16 w3-content" id="projects">
+            <h2 class="w3-text-light-grey">My Skills</h2>
+            <hr style="width:200px" class="w3-opacity-off">
+            <div class="w3-padding-16 grid">
+                <div class="w3-quarter w3-section w3-card-4">
+                    <img src="/images/tech-logos/css3_logo.png" alt="html and css logo">
+                    <p class=" w3-xlarge">HTML/CSS</p><br>
                 </div>
-                <div class="w3-quarter w3-section">
-                    <span class="w3-xlarge">55+</span><br>
-                    Projects Done
+                <div class="w3-quarter w3-section w3-card-4">
+                    <img src="/images/tech-logos/js-logo.png" alt="JS logo">
+                    <p class=" w3-xlarge">JavaScript</p><br>
                 </div>
-                <div class="w3-quarter w3-section">
-                    <span class="w3-xlarge">89+</span><br>
-                    Happy Clients
+                <div class="w3-quarter w3-section w3-card-4">
+                    <img src="/images/tech-logos/python-logo.jpeg" alt="python logo">
+                    <p class=" w3-xlarge">Python</p><br>
+                </div>                
+                <div class="w3-quarter w3-section w3-card-4">
+                    <img src="/images/tech-logos/django-logo.webp" alt="django logo">
+                    <p class=" w3-xlarge">Django</p><br>
                 </div>
-                <div class="w3-quarter w3-section">
-                    <span class="w3-xlarge">150+</span><br>
-                    Meetings
+                <div class="w3-quarter w3-section w3-card-4">
+                    <img src="/images/tech-logos/react-logo.png" alt="react logo">
+                    <p class=" w3-xlarge">React</p><br>
+                </div>
+                <div class="w3-quarter w3-section w3-card-4">
+                    <img src="/images/tech-logos/ajax-logo.png" alt="AJAX logo">
+                    <p class=" w3-xlarge">AJAX</p><br>
+                </div>
+                <div class="w3-quarter w3-section w3-card-4">
+                    <img src="/images/tech-logos/php-logo.png" alt="PHP logo">
+                    <p class=" w3-xlarge">PHP</p><br>
                 </div>
             </div>
 
             <button class="w3-button w3-light-grey w3-padding-large w3-section">
                 <i class="fa fa-download"></i> Download Resume
             </button>
-
-            <!-- Grid for pricing tables -->
-            <h3 class="w3-padding-16 w3-text-light-grey">My Price</h3>
-            <div class="w3-row-padding" style="margin:0 -16px">
-                <div class="w3-half w3-margin-bottom">
-                    <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-                        <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
-                        <li class="w3-padding-16">Web Design</li>
-                        <li class="w3-padding-16">Photography</li>
-                        <li class="w3-padding-16">5GB Storage</li>
-                        <li class="w3-padding-16">Mail Support</li>
-                        <li class="w3-padding-16">
-                            <h2>$ 10</h2>
-                            <span class="w3-opacity">per month</span>
-                        </li>
-                        <li class="w3-light-grey w3-padding-24">
-                            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="w3-half">
-                    <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-                        <li class="w3-dark-grey w3-xlarge w3-padding-32">Pro</li>
-                        <li class="w3-padding-16">Web Design</li>
-                        <li class="w3-padding-16">Photography</li>
-                        <li class="w3-padding-16">50GB Storage</li>
-                        <li class="w3-padding-16">Endless Support</li>
-                        <li class="w3-padding-16">
-                            <h2>$ 25</h2>
-                            <span class="w3-opacity">per month</span>
-                        </li>
-                        <li class="w3-light-grey w3-padding-24">
-                            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
-                        </li>
-                    </ul>
-                </div>
-                <!-- End Grid/Pricing tables -->
-            </div>
-
-            <!-- Testimonials -->
-            <h3 class="w3-padding-24 w3-text-light-grey">My Reputation</h3>
-            <img src="/w3images/bandmember.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right"
-                style="width:80px">
-            <p><span class="w3-large w3-margin-right">Chris Fox.</span> CEO at Mighty Schools.</p>
-            <p>John Doe saved us from a web disaster.</p><br>
-
-            <img src="/w3images/avatar_g2.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right"
-                style="width:80px">
-            <p><span class="w3-large w3-margin-right">Rebecca Flex.</span> CEO at Company.</p>
-            <p>No one is better than John Doe.</p>
-            <!-- End About Section -->
         </div>
 
         <!-- Portfolio Section -->
-        <div class="w3-padding-64 w3-content" id="photos">
-            <h2 class="w3-text-light-grey">My Photos</h2>
+        <div class="w3-padding-64 w3-content" id="projects">
+            <h2 class="w3-text-light-grey">My Projects</h2>
             <hr style="width:200px" class="w3-opacity">
 
             <!-- Grid for photos -->
@@ -227,7 +181,8 @@
             <hr style="width:200px" class="w3-opacity">
 
             <div class="w3-section">
-                <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Kingston upon Thames, London, UK</p>
+                <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Kingston upon Thames,
+                    London, UK</p>
                 <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +44 8888888</p>
                 <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com
                 </p>

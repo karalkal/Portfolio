@@ -203,11 +203,16 @@ h6 {
     font-size: 16px
 }
 
+.font-awesome-icon {
+    color: #690000;
+    margin-right: 8px
+}
+
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 1rem;
-  }
+}
 
 .w3-serif {
     font-family: serif
@@ -1061,7 +1066,7 @@ a {
 
 
 .w3-card-4>img {
-    width: 200%;
+    width: 150%;
 }
 
 .w3-card-4>p {
@@ -1342,7 +1347,7 @@ a {
 
 .w3-section,
 .w3-code {
-    margin-top: 16px !important;
+    margin-top: 11px !important;
     margin-bottom: 16px !important
 }
 

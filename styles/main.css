@@ -119,11 +119,13 @@ a {
 
 .w3-sidebar {
     height: 100%;
-    width: 200px;
+    /* width: 200px; */
     background-color: #fff;
     position: fixed !important;
-    z-index: 1;
-    overflow: auto
+    /* z-index: 1; */
+    /* overflow: auto */
+    width: 120px;
+    background: #222;
 }
 
 .w3-main,
@@ -431,14 +433,6 @@ a {
 }
 
 @media (max-width:600px) {
-    .w3-modal-content {
-        margin: 0 10px;
-        width: auto !important
-    }
-
-    .w3-modal {
-        padding-top: 30px
-    }
 
     .w3-dropdown-hover.w3-mobile .w3-dropdown-content,
     .w3-dropdown-click.w3-mobile .w3-dropdown-content {
@@ -470,21 +464,9 @@ a {
     }
 }
 
-@media (max-width:768px) {
-    .w3-modal-content {
-        width: 500px
-    }
-
-    .w3-modal {
-        padding-top: 50px
-    }
-}
+@media (max-width:768px) {}
 
 @media (min-width:993px) {
-    .w3-modal-content {
-        width: 900px
-    }
-
     .w3-hide-large {
         display: none !important
     }
@@ -848,22 +830,6 @@ a {
     filter: grayscale(50%)
 }
 
-.w3-sepia {
-    filter: sepia(75%)
-}
-
-.w3-sepia-max,
-.w3-hover-sepia:hover {
-    filter: sepia(100%)
-}
-
-.w3-sepia-min {
-    filter: sepia(50%)
-}
-
-.w3-tiny {
-    font-size: 10px !important
-}
 
 .w3-small {
     font-size: 12px !important
@@ -873,20 +839,12 @@ a {
     font-size: 15px !important
 }
 
-.w3-large {
-    font-size: 18px !important
-}
-
 .w3-xlarge {
     font-size: 24px !important
 }
 
 .w3-xxlarge {
     font-size: 36px !important
-}
-
-.w3-xxxlarge {
-    font-size: 48px !important
 }
 
 .w3-jumbo {
@@ -1112,10 +1070,10 @@ a {
 }
 
 /* Set the width of the sidebar to 120px */
-.w3-sidebar {
+/* .w3-sidebar {
     width: 120px;
     background: #222;
-}
+} */
 
 /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
 #main {

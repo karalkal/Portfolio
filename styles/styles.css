@@ -1,0 +1,21 @@
+body {
+    color: #fff !important;
+    background-color: #000 !important
+}
+
+/* Set the width of the sidebar to 120px */
+.sidebar {
+    height: 100%;
+    background-color: #fff;
+    position: fixed !important;
+    width: 120px;
+    background: #222;
+    text-align: center !important;
+    font-size: 12px !important
+}
+
+@media (max-width:600px) {
+    .sidebar {
+        display: none !important
+    }
+}

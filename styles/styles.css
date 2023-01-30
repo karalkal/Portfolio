@@ -1,28 +1,49 @@
-body {
-    color: #fff !important;
-    background-color: #000 !important
+* {
+    margin: 0;
+    padding: 0;
 }
 
-/* Set the width of the sidebar to 120px */
-.topbar {
+/* clearfix */
+*:before,
+*:after {
+    /* content: ""; */
+    display: table;
+    clear: both;
+}
+
+body {
+    color: #fff !important;
+    background-color: #000 !important;
+}
+
+#site-logo{
+    border-bottom: 1px solid black;
+    width: 100%;
+    padding: 11px 6px;
+}
+
+.topmenu {
     display: none;
 }
 
-.sidebar {
+.sidemenu {
     height: 100%;
     position: fixed !important;
     width: 120px;
-    background-color: #222;
+    background-color: #151515;
     text-align: center !important;
 }
 
 .menubar-item {
+    background-color: #2e2e2e;
+    border-bottom: 1px solid black;
     font-size: 12px;
     display: inline-block;
     padding: 12px 24px;
     text-decoration: none;
     cursor: pointer;
     color: #fff;
+    width: 100%;
 }
 
 .menubar-item:hover {
@@ -35,17 +56,45 @@ body {
     font-size: 36px;
 }
 
+main {
+    padding: 12px 24px !important;
+    margin-left: 120px;
+}
+
+.heading {
+    padding-top: 22px !important;
+    text-align: center !important;
+    color: #fff !important;
+    background-color: #000 !important;
+}
+
+.heading>span {
+    font-size: 64px !important;
+    border-bottom: 4px solid #690000;
+    padding-bottom: 11px;
+}
+
+.heading>p {
+    font-size: 24px !important;
+    padding: 22px 0;
+}
+
 
 @media (max-width:600px) {
-    .sidebar {
+    .sidemenu {
         display: none !important
     }
 
-    .topbar {
+    .topmenu {
         display: flex;
         justify-content: space-between;
         background-color: #000;
+        position: -webkit-sticky;
+        position: -moz-sticky;
+        position: -o-sticky;
+        position: -ms-sticky;
         position: sticky;
+
         top: 0;
         z-index: 100;
     }
@@ -57,5 +106,18 @@ body {
         padding: 4px 8px;
         font-size: 15px;
         font-weight: bold;
+        width: auto;
+    }
+
+    main {
+        margin-left: 0;
+    }
+
+    .heading>span {
+        font-size: 35px !important;
+    }
+
+    .heading>p {
+        font-size: 17px !important
     }
 }

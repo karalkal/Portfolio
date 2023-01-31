@@ -101,7 +101,7 @@ main {
 }
 
 section.skills {
-    color: #ccc !important;
+    color: #ccc;
     text-align: left;
     margin-left: auto;
     margin-right: auto;
@@ -111,10 +111,12 @@ section.skills {
 section.skills i {
     font-size: 31px;
     line-height: 0px;
+    color: #690000;
+    margin-right: 8px
 }
 
 section.skills span {
-    font-size: 24px !important
+    font-size: 24px;
 }
 
 .galley-grid {
@@ -131,7 +133,6 @@ section.skills span {
     align-items: center;
     justify-content: space-around;
     object-fit: cover;
-
 }
 
 
@@ -143,6 +144,16 @@ section.skills span {
     color: #f1f1f1;
     text-align: center;
     padding: 11px 0 0 0;
+}
+
+.download-resume-btn {
+    padding: 15px 22px 6px;
+}
+
+.download-resume-btn>span {
+    font-size: 17px !important;
+    margin-left: 6px;
+    font-weight: 600;
 }
 
 
@@ -181,11 +192,11 @@ section.skills span {
     }
 
     .heading>span {
-        font-size: 35px !important;
+        font-size: 35px;
     }
 
     .heading>p {
-        font-size: 17px !important
+        font-size: 17px;
     }
 
     .section-title {
@@ -193,16 +204,12 @@ section.skills span {
     }
 
     section.skills {
-        padding-top: 22px !important;
-        padding-bottom: 22px !important;
-    }
-
-    section.skills i {
-        font-size: 24px
+        padding-top: 22px;
+        padding-bottom: 22px;
     }
 
     section.skills span {
-        font-size: 17px !important
+        font-size: 17px
     }
 
     .galley-grid {

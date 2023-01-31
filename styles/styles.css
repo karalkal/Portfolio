@@ -48,20 +48,21 @@ body {
 
 .menubar-item-selected {
     background-color: #ccc;
-    color: #690000;
+    color: #151515;
+
 }
 
 .menubar-item:hover {
-    transition: background-color 1.1s;
-    color: #151515;
-    background-color: #ccc !important
+    transition: background-color 1.7s;
+    /* transition: color 1.7s; */
+    background-color: #ccc !important;
+    color: #690000;
 }
 
 .menubar-item:active {
     transition: none;
-    background-color: #690000 !important;
     color: #ccc;
-    /* background-color: #151515 !important */
+    background-color: #690000 !important;
 }
 
 .menubar-item>i {
@@ -89,6 +90,30 @@ main {
 .heading>p {
     font-size: 24px !important;
     padding: 22px 0;
+}
+
+.section-title {
+    font-weight: 500;
+    font-size: 44px;
+}
+
+section.skills {
+    padding-top: 64px !important;
+    padding-bottom: 64px !important;
+    color: #ccc !important;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 980px
+}
+
+section.skills i {
+    font-size: 31px;
+    line-height: 0px;
+}
+
+section.skills span {
+    font-size: 24px !important
 }
 
 
@@ -132,4 +157,23 @@ main {
     .heading>p {
         font-size: 17px !important
     }
+
+    .section-title {
+        font-size: 26px;
+    }
+    
+    section.skills {
+        padding-top: 22px !important;
+        padding-bottom: 22px !important;
+    }
+    
+    section.skills i {
+        font-size: 24px
+    }
+    
+    section.skills span {
+        font-size: 17px !important
+    }
+
+
 }

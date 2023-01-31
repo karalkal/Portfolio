@@ -1,6 +1,8 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    /* This makes sure that the padding and border are included in the total width and height of the elements. */
 }
 
 /* clearfix */
@@ -93,13 +95,12 @@ main {
 }
 
 .section-title {
+    padding-top: 64px !important;
     font-weight: 500;
     font-size: 44px;
 }
 
 section.skills {
-    padding-top: 64px !important;
-    padding-bottom: 64px !important;
     color: #ccc !important;
     text-align: left;
     margin-left: auto;
@@ -115,6 +116,35 @@ section.skills i {
 section.skills span {
     font-size: 24px !important
 }
+
+.galley-grid {
+    margin: 44px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(62px, 1fr));
+    gap: 2rem 8rem;
+}
+
+.card {
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    object-fit: cover;
+
+}
+
+
+.card>img {
+    width: 100%;
+}
+
+.card>p {
+    color: #f1f1f1;
+    text-align: center;
+    padding: 11px 0 0 0;
+}
+
 
 
 @media (max-width:600px) {
@@ -161,19 +191,26 @@ section.skills span {
     .section-title {
         font-size: 26px;
     }
-    
+
     section.skills {
         padding-top: 22px !important;
         padding-bottom: 22px !important;
     }
-    
+
     section.skills i {
         font-size: 24px
     }
-    
+
     section.skills span {
         font-size: 17px !important
     }
 
+    .galley-grid {
+        gap: 2rem 4rem;
+    }
 
+    .card>p {
+        font-size: 14px !important;
+        padding: 4px 0 0 0;
+    }
 }

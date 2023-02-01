@@ -99,6 +99,13 @@ main {
     padding: 22px 0;
 }
 
+#profile-image {
+    width: 992;
+    height: 1108;
+    max-width: 100%;
+    height: auto
+}
+
 section {
     color: #ccc;
     text-align: left;

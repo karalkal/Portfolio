@@ -13,7 +13,6 @@
     clear: both;
 }
 
-
 html {
     font-family: 'Raleway', sans-serif;
     font-size: 15px;
@@ -21,16 +20,20 @@ html {
     overflow-x: hidden
 }
 
-
-
 body {
     color: #fff !important;
     background-color: #000 !important;
 }
 
+a {
+    color: inherit
+}
+
 hr {
+    color: #690000;
+    border-top: 3px solid #690000;
     width: 26%;
-    margin: 0 0 20px 0;
+    margin: 8px 0 20px;
 }
 
 #site-logo {
@@ -66,7 +69,6 @@ hr {
 .menubar-item-selected {
     background-color: #ccc;
     color: #151515;
-
 }
 
 .menubar-item:hover {
@@ -100,7 +102,7 @@ main {
 
 .heading>span {
     font-size: 64px;
-    border-bottom: 4px solid #690000;
+    border-bottom: 8px solid #690000;
     padding-bottom: 11px;
 }
 
@@ -160,7 +162,6 @@ section#about span {
     align-items: center;
 }
 
-
 .card>img {
     width: 100%;
 }
@@ -196,6 +197,7 @@ section#projects {
 }
 
 section#contact div {
+    color: #fff !important;
     margin: 35px 0;
     display: table;
 }
@@ -284,7 +286,6 @@ section#contact a>i:hover {
         font-size: 26px;
     }
 
-
     section#about span {
         font-size: 17px
     }
@@ -297,7 +298,6 @@ section#contact a>i:hover {
         font-size: 14px !important;
         padding: 4px 0 0 0;
     }
-
 
     .download-resume-btn {
         padding: 13px 11px 0;

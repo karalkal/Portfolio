@@ -59,11 +59,10 @@ h2 {
 }
 
 
-hr {
-    border: 0;
+/* hr {
     border-top: 4px solid #690000;
     margin: 20px 0;
-}
+} */
 
 .w3-image {
     max-width: 100%;

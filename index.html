@@ -9,15 +9,14 @@
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/main.css" />
     <link rel="stylesheet" href="styles/styles.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <style></style>
 </head>
 
 <body>
@@ -61,9 +60,9 @@
         </header>
 
         <!-- About + Skills Section-->
-        <section class="skills" id="about">
+        <section id="about">
             <h2 class="section-title">About Me</h2>
-            <hr style="width: 200px" />
+            <hr />
             <div> <i class="fa fa-terminal" aria-hidden="true"></i>
                 <span>Junior programmer with strong interest in web development, coding languages,
                     computer networking and data science
@@ -84,7 +83,7 @@
             </div>
 
             <h2 class="section-title">My Skills</h2>
-            <hr style="width: 200px" />
+            <hr />
             <div class="galley-grid">
                 <div class="card">
                     <img src="./images/tech-logos/css3_logo.png" alt="html and css logo" />
@@ -153,14 +152,10 @@
             </button>
         </section>
 
-
-
-        </div>
-
         <!-- Portfolio Section -->
         <div class="w3-padding-64 w3-content" id="projects">
             <h2 class="section-title">My Projects</h2>
-            <hr style="width: 200px" />
+            <hr />
 
             <!-- Grid for photos -->
             <div class="w3-row-padding" style="margin: 0 -16px">
@@ -182,39 +177,36 @@
         </div>
 
         <!-- Contact Section -->
-        <div class="w3-padding-64  w3-content" id="contact">
+        <section id="contact">
             <h2 class="section-title">Contact Me</h2>
-            <hr style="width: 200px" />
+            <hr />
 
-            <div class="w3-section">
-                <p>
-                    <i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>
-                    Kingston upon Thames, London, UK
-                </p>
-                <p>
-                    <i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>
-                    Phone: +44 8888888
-                </p>
-                <p>
-                    <i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right">
-                    </i>
-                    Email: kurcho1944@gmail.com
-                </p>
-                <br>
-                <p>
-                    <a href="https://www.facebook.com/kalin.ka.52">
-                        <i
-                            class="fa fa-facebook-official fa-fw w3-text-white w3-xxlarge w3-margin-right w3-hover-opacity"></i></a>
+            <div>
+                <a href="https://www.google.co.uk/maps/place/Kingston+upon+Thames+KT2/@51.4212412,-0.2982784,14z/data=!3m1!4b1!4m6!3m5!1s0x4876093778987453:0x33a6da15c1c9982e!8m2!3d51.4174912!4d-0.2843022!16s%2Fg%2F11bw3frpmz"
+                    target="_blank">
+                    <i class="fa fa-map-marker fa-fw" style="font-size: 40px;"></i>
+                    <span>Based in Kingston upon Thames, London, UK</span>
 
-                    <a href="https://www.facebook.com/kalin.ka.52">
-                        <i class="fa fa-github fa-fw w3-text-white w3-xxlarge w3-margin-right w3-hover-opacity"></i></a>
-
-                    <a href="https://www.facebook.com/kalin.ka.52">
-                        <i
-                            class="fa fa-linkedin fa-fw w3-text-white w3-xxlarge w3-margin-right w3-hover-opacity"></i></a>
+                </a>
+            </div>
+            <!-- <div><i class="fa fa-phone fa-fw"></i>Phone: +44 8888888</div> -->
+            <div>
+                <i class="fa fa-envelope fa-fw"></i>
+                <!-- using NBSP to keep allignment with prev icon which is enlarged -->
+                <span>&nbsp;&nbsp;Email: kurcho1944@gmail.com</span>
                 </p>
             </div>
-        </div>
+            <div>
+                <a href="https://www.facebook.com/kalin.ka.52">
+                    <i class="fa fa-facebook-official fa-fw contact-icon"></i></a>
+
+                <a href="https://www.facebook.com/kalin.ka.52">
+                    <i class="fa fa-github fa-fw contact-icon"></i></a>
+
+                <a href="https://www.facebook.com/kalin.ka.52">
+                    <i class="fa fa-linkedin fa-fw contact-icon"></i></a>
+            </div>
+        </section>
     </main>
 
     <!-- JS to change appearance of menu depending on which item is selected -->

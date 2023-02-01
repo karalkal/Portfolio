@@ -18,6 +18,11 @@ body {
     background-color: #000 !important;
 }
 
+hr {
+    width: 26%;
+    margin: 0 0 20px 0;
+}
+
 #site-logo {
     border-bottom: 1px solid black;
     width: 100%;
@@ -95,12 +100,12 @@ main {
 }
 
 .section-title {
-    padding-top: 64px !important;
+    padding-top: 64px;
     font-weight: 500;
     font-size: 44px;
 }
 
-section.skills {
+section {
     color: #ccc;
     text-align: left;
     margin-left: auto;
@@ -108,14 +113,15 @@ section.skills {
     max-width: 980px
 }
 
-section.skills i {
+
+section#about i {
     font-size: 31px;
     line-height: 0px;
-    color: #690000;
+    /* color: #690000; */
     margin-right: 8px
 }
 
-section.skills span {
+section#about span {
     font-size: 24px;
 }
 
@@ -147,13 +153,57 @@ section.skills span {
 }
 
 .download-resume-btn {
+    color: #690000;
     padding: 15px 22px 6px;
+    float: right;
+    border-radius: 4px;
+    border-style: none;
+}
+
+.download-resume-btn:hover {
+    transition: background-color 1.7s, color 1.7s;
+    background-color: #690000;
+    color: white !important;
 }
 
 .download-resume-btn>span {
     font-size: 17px !important;
     margin-left: 6px;
     font-weight: 600;
+}
+
+section#contact div {
+    margin: 35px 0;
+    display: table;
+}
+
+section#contact a {
+    text-decoration: none;
+}
+
+
+section#contact i {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 36px;
+}
+
+section#contact span {
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+    left: 30px
+}
+
+section#contact .contact-icon {
+    font-size: 40px;
+    padding: 11px 88px 88px 0;
+}
+
+section#contact .contact-icon:hover,
+section#contact a>i:hover {
+    transition: color 1.7s;
+    color: #690000;
 }
 
 
@@ -191,6 +241,10 @@ section.skills span {
         margin-left: 0;
     }
 
+    hr {
+        width: 50%;
+    }
+
     .heading>span {
         font-size: 35px;
     }
@@ -201,14 +255,15 @@ section.skills span {
 
     .section-title {
         font-size: 26px;
+        padding-top: 31px;
     }
 
-    section.skills {
+    section#about {
         padding-top: 22px;
         padding-bottom: 22px;
     }
 
-    section.skills span {
+    section#about span {
         font-size: 17px
     }
 
@@ -219,5 +274,19 @@ section.skills span {
     .card>p {
         font-size: 14px !important;
         padding: 4px 0 0 0;
+    }
+
+
+    .download-resume-btn {
+        padding: 13px 11px 0;
+        float: left;
+    }
+
+    .download-resume-btn>span {
+        font-size: 15px !important;
+    }
+
+    section#contact .contact-icon {
+        padding: 11px 62px 88px 0;
     }
 }

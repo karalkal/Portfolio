@@ -89,20 +89,14 @@ main {
 }
 
 .heading>span {
-    font-size: 64px !important;
+    font-size: 64px;
     border-bottom: 4px solid #690000;
     padding-bottom: 11px;
 }
 
 .heading>p {
-    font-size: 24px !important;
+    font-size: 24px;
     padding: 22px 0;
-}
-
-.section-title {
-    padding-top: 64px;
-    font-weight: 500;
-    font-size: 44px;
 }
 
 section {
@@ -110,15 +104,25 @@ section {
     text-align: left;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 64px;
     max-width: 980px
+}
+
+section>h2 {
+    font-weight: 500;
+    font-size: 44px;
 }
 
 
 section#about i {
     font-size: 31px;
     line-height: 0px;
-    /* color: #690000; */
     margin-right: 8px
+}
+
+/* there must be a more intelligent way to ensure download icon changes color upon hover? */
+section#about .bulletpoint {
+    color: #690000;
 }
 
 section#about span {
@@ -126,10 +130,10 @@ section#about span {
 }
 
 .galley-grid {
-    margin: 44px 0;
+    margin: 35px 0;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(62px, 1fr));
-    gap: 2rem 8rem;
+    grid-template-columns: repeat(auto-fill, minmax(64px, 1fr));
+    gap: 2rem 6rem;
 }
 
 .card {
@@ -137,8 +141,6 @@ section#about span {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-    object-fit: cover;
 }
 
 
@@ -172,6 +174,10 @@ section#about span {
     font-weight: 600;
 }
 
+section#projects {
+    margin-top: 88px;
+}
+
 section#contact div {
     margin: 35px 0;
     display: table;
@@ -181,7 +187,6 @@ section#contact a {
     text-decoration: none;
 }
 
-
 section#contact i {
     display: table-cell;
     vertical-align: middle;
@@ -189,6 +194,7 @@ section#contact i {
 }
 
 section#contact span {
+    font-size: 22px;
     display: table-cell;
     vertical-align: middle;
     position: relative;
@@ -217,11 +223,11 @@ section#contact a>i:hover {
         display: flex;
         justify-content: space-between;
         background-color: #000;
+        position: sticky;
         position: -webkit-sticky;
         position: -moz-sticky;
         position: -o-sticky;
         position: -ms-sticky;
-        position: sticky;
 
         top: 0;
         z-index: 100;
@@ -253,15 +259,14 @@ section#contact a>i:hover {
         font-size: 17px;
     }
 
-    .section-title {
-        font-size: 26px;
+    section {
         padding-top: 31px;
     }
 
-    section#about {
-        padding-top: 22px;
-        padding-bottom: 22px;
+    section>h2 {
+        font-size: 26px;
     }
+
 
     section#about span {
         font-size: 17px
@@ -286,7 +291,15 @@ section#contact a>i:hover {
         font-size: 15px !important;
     }
 
+    section#contact div {
+        margin: 19px 0;
+    }
+
+    section#contact span {
+        font-size: 15px;
+    }
+
     section#contact .contact-icon {
-        padding: 11px 62px 88px 0;
+        padding: 11px 62px 35px 0;
     }
 }

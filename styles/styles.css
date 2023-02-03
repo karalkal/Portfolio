@@ -72,8 +72,8 @@ hr {
 }
 
 .menubar-item:hover {
-    transition: background-color 1.7s;
-    /* transition: color 1.7s; */
+    transition: background-color 1.3s, color 1.3s;
+    /* transition: color 1.3s; */
     background-color: #ccc !important;
     color: #690000;
 }
@@ -181,14 +181,19 @@ section#about span {
 }
 
 .download-resume-btn:hover {
-    transition: background-color 1.7s, color 1.7s;
+    transition: background-color 1.3s, color 1.3s;
     background-color: #690000;
     color: white !important;
 }
 
+.download-resume-btn>i {
+    font-size: 26px !important;    
+}
+
 .download-resume-btn>span {
+    vertical-align:top;
     font-size: 17px !important;
-    margin-left: 6px;
+    margin-left: 8px;
     font-weight: 600;
 }
 
@@ -227,7 +232,7 @@ section#contact .contact-icon {
 
 section#contact .contact-icon:hover,
 section#contact a>i:hover {
-    transition: color 1.7s;
+    transition: color 1.3s;
     color: #690000;
 }
 

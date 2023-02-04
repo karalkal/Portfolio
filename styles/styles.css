@@ -37,7 +37,7 @@ hr {
 }
 
 #site-logo {
-    border-bottom: 1px solid black;
+    /* border-bottom: 1px solid black; */
     width: 100%;
     padding: 11px 6px;
 }
@@ -64,6 +64,10 @@ hr {
     cursor: pointer;
     color: #fff;
     width: 100%;
+}
+
+.menubar-item:last-child {
+    border: none;
 }
 
 .menubar-item-selected {

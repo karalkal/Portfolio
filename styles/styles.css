@@ -201,9 +201,6 @@ section#about span {
     font-weight: 600;
 }
 
-section#projects {
-    margin-top: 88px;
-}
 
 section#contact div {
     color: #fff !important;
@@ -242,23 +239,29 @@ section#contact a>i:hover {
     color: #690000;
 }
 
-section>div#projects {
+section#portfolio {
+    margin-top: 62px;
+}
+
+section#portfolio>div#projects {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-
 div.portfolio-card {
     width: 48%;
     margin: 22px 0;
+    padding: 6px;
+    background-color: #2e2e2e;
 }
 
 div.portfolio-card>img {
     width: 100%;
 }
+
 div.portfolio-card>p {
-    height: 170px;
+    font-size: 19px;
 }
 
 
@@ -348,6 +351,26 @@ div.portfolio-card>p {
     section#contact .contact-icon {
         padding: 11px 62px 35px 0;
     }
+
+    section#portfolio {
+        margin: 88px 0;
+    }
+
+    section#portfolio>div#projects {
+        display: block;
+    }
+
+    div.portfolio-card {
+        width: 100%;
+        margin: 22px 0;
+        padding: 6px;
+        background-color: #2e2e2e;
+    }
+
+    div.portfolio-card>p {
+        font-size: 15px;
+        height: auto;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -414,7 +437,7 @@ div.portfolio-card>p {
     }
 
     .galley-grid {
-        margin: 11px 0;
+        margin: 11px 0 22px 0;
         grid-template-columns: repeat(auto-fill, minmax(31px, 1fr));
         gap: 2rem 4rem;
     }
@@ -438,6 +461,18 @@ div.portfolio-card>p {
     section#contact span {
         font-size: 15px;
         left: 17px
+    }
+
+    div.portfolio-card {
+        width: 48%;
+        margin: 22px 0;
+        padding: 6px;
+        background-color: #2e2e2e;
+    }
+
+    div.portfolio-card>p {
+        height: auto;
+        font-size: 15px;
     }
 }
 

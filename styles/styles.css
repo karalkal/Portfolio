@@ -100,34 +100,32 @@ main {
 .heading {
     padding-top: 22px !important;
     text-align: center !important;
-    color: #fff !important;
-    background-color: #000 !important;
 }
 
 .heading>span {
-    font-size: 60px !important;
+    font-size: 71px !important;
     border-bottom: 6px solid #690000;
     padding-bottom: 11px;
 }
 
 .heading>p {
-    font-size: 24px;
+    font-size: 31px !important;
     padding: 22px 0;
 }
 
 #profile-image {
-    width: 992;
-    height: 1108;
+    width: 992px;
+    height: 1108px;
     max-width: 100%;
-    height: auto
+    height: auto;
+    margin-top: 26px;
 }
 
 section {
     color: #ccc;
-    text-align: left;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 64px;
+    margin-top: 26px;
     max-width: 980px
 }
 
@@ -135,7 +133,6 @@ section>h2 {
     font-weight: 500;
     font-size: 44px;
 }
-
 
 section#about i {
     font-size: 31px;
@@ -200,7 +197,6 @@ section#about span {
     margin-left: 8px;
     font-weight: 600;
 }
-
 
 section#contact div {
     color: #fff !important;
@@ -284,7 +280,6 @@ div.portfolio-card>p {
         z-index: 100;
     }
 
-
     .menubar-item {
         border-radius: 4px;
         text-align: center;
@@ -303,11 +298,11 @@ div.portfolio-card>p {
     }
 
     .heading>span {
-        font-size: 35px;
+        font-size: 35px !important;
     }
 
     .heading>p {
-        font-size: 17px;
+        font-size: 17px !important;
     }
 
     section {
@@ -398,13 +393,13 @@ div.portfolio-card>p {
     }
 
     .heading>span {
-        font-size: 35px;
+        font-size: 35px !important;
         border-bottom: 4px solid #690000;
         padding-bottom: 6px;
     }
 
     .heading>p {
-        font-size: 17px;
+        font-size: 17px !important;
         padding: 11px 0;
     }
 
@@ -423,12 +418,10 @@ div.portfolio-card>p {
         margin: 4px 0 17px;
     }
 
-
     section#about i {
         font-size: 22px;
         margin-right: 8px
     }
-
 
     section#about span {
         font-size: 17px;
@@ -475,9 +468,9 @@ div.portfolio-card>p {
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 992px) {
     .sidemenu {
-        width: 110px;
+        width: 80px;
     }
 
     #site-logo {
@@ -487,8 +480,13 @@ div.portfolio-card>p {
 
     .menubar-item {
         background-color: #2e2e2e;
-        font-size: 12px;
+        font-size: 11px;
         color: #fff;
+        padding: 8px 11px;
+    }
+
+    .menubar-item>i {
+        font-size: 35px;
     }
 
     .heading {
@@ -496,22 +494,22 @@ div.portfolio-card>p {
     }
 
     .heading>span {
-        font-size: 44px;
+        font-size: 53px !important;
         border-bottom: 4px solid #690000;
         padding-bottom: 6px;
     }
 
     .heading>p {
-        font-size: 24px;
+        font-size: 24px !important;
         padding: 11px 0;
     }
 
     section {
-        padding-top: 26px;
+        padding-top: 19px;
     }
 
     section>h2 {
-        font-size: 31px;
+        font-size: 26px;
     }
 
     hr {
@@ -520,14 +518,12 @@ div.portfolio-card>p {
         margin: 4px 0 17px;
     }
 
-
     section#about i {
         font-size: 26px;
     }
 
-
     section#about span {
-        font-size: 19px;
+        font-size: 17px;
     }
 
     .galley-grid {

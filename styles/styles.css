@@ -105,7 +105,7 @@ main {
 }
 
 .heading>span {
-    font-size: 64px;
+    font-size: 60px !important;
     border-bottom: 6px solid #690000;
     padding-bottom: 11px;
 }
@@ -381,14 +381,12 @@ div.portfolio-card>p {
 
     #site-logo {
         border-bottom: none;
-        padding: 11px 6px;
+        padding: 11px 6px 2px;
     }
 
     .menubar-item {
         background-color: #2e2e2e;
-        border-bottom: 1px solid black;
         font-size: 12px;
-        display: inline-block;
         padding: 6px 11px;
         color: #fff;
     }
@@ -477,7 +475,89 @@ div.portfolio-card>p {
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+    .sidemenu {
+        width: 110px;
+    }
+
+    #site-logo {
+        border-bottom: none;
+        padding: 4px 8px;
+    }
+
+    .menubar-item {
+        background-color: #2e2e2e;
+        font-size: 12px;
+        color: #fff;
+    }
+
+    .heading {
+        padding-top: 17px !important;
+    }
+
+    .heading>span {
+        font-size: 44px;
+        border-bottom: 4px solid #690000;
+        padding-bottom: 6px;
+    }
+
+    .heading>p {
+        font-size: 24px;
+        padding: 11px 0;
+    }
+
+    section {
+        padding-top: 26px;
+    }
+
+    section>h2 {
+        font-size: 31px;
+    }
+
+    hr {
+        border-top: 3px solid #690000;
+        width: 26%;
+        margin: 4px 0 17px;
+    }
+
+
+    section#about i {
+        font-size: 26px;
+    }
+
+
+    section#about span {
+        font-size: 19px;
+    }
+
+    .galley-grid {
+        margin: 26px 0 22px 0;
+        grid-template-columns: repeat(auto-fill, minmax(44px, 1fr));
+        gap: 3rem 6rem;
+    }
+
+    .card>p {
+        font-size: 14px;
+    }
+
+    .download-resume-btn {
+        margin-top: 26px;
+        padding: 8px 11px 1px;
+    }
+
+    section#contact div {
+        margin: 11px 0;
+    }
+
+    section#contact i {
+        font-size: 31px !important;
+    }
+
+    section#contact span {
+        font-size: 15px;
+        left: 17px
+    }
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {}

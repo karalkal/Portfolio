@@ -1,2 +1,2 @@
 # Portfolio
-Basic HTML / CSS portfolio representing myself
+Basic HTML / CSS portfolio representing myself as a web dev

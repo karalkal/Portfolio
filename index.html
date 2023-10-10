@@ -31,7 +31,7 @@
 </head>
 
 <body>
-    <!-- Icon Bar (sidemenu - hidden on small screens) -->
+    <!-- Icon Bar (side menu - hidden on small screens) -->
     <nav class="sidemenu">
         <!-- Avatar image in top left corner + link to HOME-->
         <a href="#"> <img src="images/Logo_Cropped.png" alt="site logo containing KK initials" id="site-logo" /> </a>
@@ -89,7 +89,7 @@
                 </span>
             </div>
             <div><i class="fa fa-terminal bulletpoint" aria-hidden="true"></i>
-                <span> Passionate about music, cinema, winter and water sports, travelling and exploring
+                <span> Passionate about music, cinema, winter and water sports, traveling and exploring
                 </span>
             </div>
         </section>
@@ -176,11 +176,14 @@
 
                 <div class="portfolio-card">
                     <img src="./images/projects/JoKar-composite.jpg"
-                        alt="composite image of sfreenshots from project karaliev.com">
+                        alt="composite image of screenshots from project karaliev.com">
                     <p><a href="https://karaliev.com/" target="_blank">This WordPress website</a> is a digital portfolio
-                        of an artist. I take some pride in the fact that it is a solo effort of mine - from physically
+                        of an artist - my father Georgi. I take some pride in the fact that it is a solo effort of mine
+                        - from physically
                         taking the photos, to editing them with Gimp, to arranging the domain name and hosting, to the
-                        actual design and deployment.</p>
+                        actual design and deployment. It was part of the my final year project at University of West
+                        London and have won the award for Best Project on the BSc Information Technology course.
+                    </p>
                 </div>
 
                 <div class="portfolio-card">
@@ -190,9 +193,37 @@
                         application combining social media, online forum, data scraping and data storage
                         features. Its objective is to act as a platform where users can share their favourite
                         music albums and communicate with one another. The back end has been created using the
-                        Python-based framework Django<a href="https://phonotheque.up.railway.app/about/"
+                        Python-based framework Django. <a href="https://phonotheque.up.railway.app/about/"
                             target="_blank">The About section</a> provides in-depth info about the technicalities while
-                        the app itself can be safely tested with mock registration credentials.
+                        the app itself can be tested safely and easily with mock registration credentials.
+                    </p>
+                </div>
+
+                <div class="portfolio-card">
+                    <img src="./images/projects/Mini-reddit-composite.jpg"
+                        alt="composite image of screenshots from project Notes">
+                    <p><a href="http://ahead-cannon.surge.sh/" target="_blank">Mini Reddit</a> was created with React
+                        and react-router-dom. As the name suggests the app is deriving data from Reddit's API. As soon
+                        as the URL is visited the landing page loads, filters and displays data about 19 subreddits I am
+                        following (takes a second or two, I am afraid) - properties like "accounts_active",
+                        "subscribers", "created_utc", "public_description", "icon_img" etc. The user can then select a
+                        subreddit (or ALL) and sort the posts by different criteria ("Best", "Top", "Hot",
+                        "Controversial"). If a post preview &lt;div&gt; is clicked a details page will
+                        be displayed including user comments. Again, data will be filtered and truncated as the original
+                        json files in Reddit's API are really huge. In a similar manner the app offers a search
+                        functionality, either for a specific subreddit or for ALL.
+                    </p>
+                </div>
+
+                <div class="portfolio-card">
+                    <img src="./images/projects/QuiQui-composite.jpg"
+                        alt="composite image of screenshots from project Notes">
+                    <p><a href="https://loquacious-heliotrope-bfb2d9.netlify.app/" target="_blank">QuiQui</a> (Quick
+                        Quizz) is build with React and uses <a href="https://opentdb.com/" target="_blank">Open Trivia
+                            DB's API</a>. The user can create and answer a 10-question quiz by customizing its topic,
+                        difficulty and type of questions (boolean or multiple choice). Once the questions have been
+                        answered (or have been left unanswered), the app will check the answers and count the correct
+                        ones.
                     </p>
                 </div>
 
@@ -212,24 +243,10 @@
                         alt="composite image of screenshots from project Notes">
                     <p><a href="https://darling-druid-32ec95.netlify.app" target="_blank">Notes</a> is a
                         React Markdown Editor which can be used for creating documentation/readme files. It is based on
-                        the
-                        react-mde package.
-                        The goal was to illustrate how the useEffect() hook works: The program maintains/updates
-                        state of [notes] array locally and writes it in localStorage each time it is modified (i.e. the
-                        array [notes] is the dependancy). This way the DB/localStorage does not need to be read each
-                        time the App is re-rendered.
-                    </p>
-                </div>
-
-                <div class="portfolio-card">
-                    <img src="./images/projects/QuiQui-composite.jpg"
-                        alt="composite image of screenshots from project Notes">
-                    <p><a href="https://loquacious-heliotrope-bfb2d9.netlify.app/" target="_blank">QuiQui</a> (Quick
-                        Quizz) is build with React and utilizes <a href="https://opentdb.com/" target="_blank">Open
-                            Trivia DB's API</a>. The user can create and
-                        answer a 10-question quiz by customizing its topic, difficulty and type of questions (boolean or
-                        multiple choice). Once the questions have been answered (or have been left unanswered), the app
-                        will check the answers and count the correct ones.
+                        the 'react-mde' package. The goal was to illustrate how the useEffect() hook works: The program
+                        maintains/updates state of [notes] array locally and writes it in localStorage each time it is
+                        modified (i.e. [notes] is the dependancy array). This way the DB/localStorage does not need
+                        to be read each time the App is re-rendered.
                     </p>
                 </div>
 

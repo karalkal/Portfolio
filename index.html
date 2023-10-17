@@ -177,7 +177,7 @@
                 <div class="portfolio-card">
                     <img src="./images/projects/JoKar-composite.jpg"
                         alt="composite image of screenshots from project karaliev.com">
-                    <p><a href="https://karaliev.com/" target="_blank">This WordPress website</a> is a digital portfolio
+                    <p>This WordPress <a href="https://karaliev.com/" target="_blank">website</a> is a digital portfolio
                         of an artist - my father Georgi. I take some pride in the fact that it is a solo effort of mine
                         - from physically
                         taking the photos, to editing them with Gimp, to arranging the domain name and hosting, to the
@@ -203,15 +203,15 @@
                     <img src="./images/projects/Mini-reddit-composite.jpg"
                         alt="composite image of screenshots from project Notes">
                     <p><a href="http://ahead-cannon.surge.sh/" target="_blank">Mini Reddit</a> was created with React
-                        and react-router-dom. The app is deriving data from Reddit's API. As soon
-                        as the URL is visited the landing page loads, filters and displays data about 19 subreddits I am
-                        following (takes a second or two, I am afraid) - properties like "accounts_active",
-                        "subscribers", "created_utc", "public_description", "icon_img" etc. The user can then select a
-                        subreddit (or ALL) and sort the posts by different criteria ("Best", "Top", "Hot",
-                        "Controversial"). If a post preview &lt;div&gt; is clicked a details page will
-                        be displayed including user comments. Again, data will be filtered and truncated as the original
-                        json files in Reddit's API are really huge. In a similar manner the app offers a search
-                        functionality, either for a specific subreddit or for ALL.
+                        and react-router-dom and is extracting data from Reddit's API. The index page loads,
+                        filters and displays data about 19 subreddits I am following - e.g. properties like
+                        "accounts_active", "subscribers", "created_utc", "public_description", "icon_img" etc. (This
+                        process takes a second or two, I am afraid). The user can then select a subreddit (or ALL) and
+                        sort the posts by different criteria ("Best", "Top", "Hot", "Controversial"). If a post preview
+                        &lt;div/card&gt; is clicked a details page will be displayed, including the related user
+                        comments. Again, data will be filtered and truncated as the original json files are immense. In
+                        a similar manner the app offers a search functionality, either for a
+                        specific subreddit or, again, for ALL subreddits.
                     </p>
                 </div>
 
@@ -221,13 +221,14 @@
                     <p><a href="https://splendid-cannoli-3d964e.netlify.app/" target="_blank">Spotify Playlist
                             Creator</a> as the name suggests is an app created with React which allows users to search
                         Spotify's DB, create a playlist by adding and removing tracks, name it and eventually save it to
-                        their
-                        account. It utilizes the so called<a
+                        their account. It utilizes <a
                             href="https://developer.spotify.com/documentation/web-api/tutorials/implicit-flow"
                             target="_blank">Implicit Grant Flow</a> meaning that the process of logging in / token
-                        obtaining is carried out entirely on the client side. In other words the user's credentials will
-                        be perfectly safe if they decide to give it a go, since the data from the hash returned from
-                        Spotify after they grant access will be stored on their device only. </p>
+                        obtaining is carried out entirely on the client side. The app will ask the user to log in and
+                        grant access to their account (for this app specifically, scope will be 'playlist-modify-private
+                        playlist-modify-public'). If approved Spotify will respond with an URL containing a hash from
+                        which an access token and related data can be derived. Then the user can perform searches,
+                        add/remove tracks to their project and eventually save it in their actual Spotify account. </p>
                 </div>
 
                 <div class="portfolio-card">
@@ -245,8 +246,8 @@
                 <div class="portfolio-card">
                     <img src="./images/projects/Tenzies-composite.jpg"
                         alt="composite image of screenshots from project Tenzies game">
-                    <p><a href="https://fantastic-pithivier-da8a41.netlify.app/" target="_blank">Tenzies</a> is a very
-                        basic game where the user rolls "the dice", then can click on a die in order to "freeze" its
+                    <p><a href="https://fantastic-pithivier-da8a41.netlify.app/" target="_blank">Tenzies</a> is a basic
+                        game where the user rolls "the dice", then can click on a die in order to "freeze" its
                         current value. The objective is to reach a state where all dices have the same value. It has
                         been created with React (under the guidance of Bob Ziroll's excellent "Learn React for free"
                         online course) and utilizes some fundamental React features like conditional rendering, use of

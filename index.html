@@ -150,7 +150,7 @@
                 </div>
                 <div class="card">
                     <img src="./images/tech-logos/mongodb.jpg" alt="MongoDB" />
-                    <p>NoSQL DB</p>
+                    <p>NoSQL</p>
                     <br />
                 </div>
                 <div class="card">
@@ -177,7 +177,7 @@
                 <div class="portfolio-card">
                     <img src="./images/projects/JoKar-composite.jpg"
                         alt="composite image of screenshots from project karaliev.com">
-                    <p>This WordPress <a href="https://karaliev.com/" target="_blank">website</a> is a digital portfolio
+                    <p><a href="https://karaliev.com/" target="_blank">This WordPress website</a> is a digital portfolio
                         of an artist - my father Georgi. I take some pride in the fact that it is a solo effort of mine
                         - from physically
                         taking the photos, to editing them with Gimp, to arranging the domain name and hosting, to the
@@ -193,9 +193,9 @@
                         application combining social media, online forum, data scraping and data storage
                         features. Its objective is to act as a platform where users can share their favourite
                         music albums and communicate with one another. The back end has been created using the
-                        Python-based framework Django. <a href="https://phonotheque.up.railway.app/about/"
-                            target="_blank">The About section</a> provides in-depth info about the technicalities while
-                        the app itself can be tested safely and easily with mock registration credentials.
+                        Python-based framework Django. The <a href="https://phonotheque.up.railway.app/about/"
+                            target="_blank">About</a> section provides in-depth info about the technicalities while
+                        the app itself can be tested safely and effortlessly with mock registration credentials.
                     </p>
                 </div>
 
@@ -209,9 +209,9 @@
                         process takes a second or two, I am afraid). The user can then select a subreddit (or ALL) and
                         sort the posts by different criteria ("Best", "Top", "Hot", "Controversial"). If a post preview
                         &lt;div/card&gt; is clicked a details page will be displayed, including the related user
-                        comments. Again, data will be filtered and truncated as the original json files are immense. In
-                        a similar manner the app offers a search functionality, either for a
-                        specific subreddit or, again, for ALL subreddits.
+                        comments. Again, data will be filtered and truncated before being processed for rendering
+                        as the original json files are immense. The app offers search functionality as well, either
+                        within a specific subreddit or for all subreddits.
                     </p>
                 </div>
 
@@ -223,9 +223,9 @@
                         Spotify's DB, create a playlist by adding and removing tracks, name it and eventually save it to
                         their account. It utilizes <a
                             href="https://developer.spotify.com/documentation/web-api/tutorials/implicit-flow"
-                            target="_blank">Implicit Grant Flow</a> meaning that the process of logging in / token
-                        obtaining is carried out entirely on the client side. The app will ask the user to log in and
-                        grant access to their account (for this app specifically, scope will be 'playlist-modify-private
+                            target="_blank">Implicit Grant Flow</a> meaning that the process of logging in / obtaining
+                        JWT is carried out entirely on the client side. The app will ask the user to log in and
+                        grant access to their account (scope is limited to 'playlist-modify-private
                         playlist-modify-public'). If approved Spotify will respond with an URL containing a hash from
                         which an access token and related data can be derived. Then the user can perform searches,
                         add/remove tracks to their project and eventually save it in their actual Spotify account. </p>

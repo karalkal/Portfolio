@@ -208,7 +208,7 @@
                         "accounts_active", "subscribers", "created_utc", "public_description", "icon_img" etc. (This
                         process takes a second or two, I am afraid). The user can then select a subreddit (or ALL) and
                         sort the posts by different criteria ("Best", "Top", "Hot", "Controversial"). If a post preview
-                        &lt;div/card&gt; is clicked a details page will be displayed, including the related user
+                        card &lt;div&gt; is clicked a details page will be displayed, including the related user
                         comments. Again, data will be filtered and truncated before being processed for rendering
                         as the original json files are immense. The app offers search functionality as well, either
                         within a specific subreddit or for all subreddits.
@@ -219,16 +219,16 @@
                     <img src="./images/projects/Spotify-playlist-creator-composite.jpg"
                         alt="composite image of screenshots from project Notes">
                     <p><a href="https://splendid-cannoli-3d964e.netlify.app/" target="_blank">Spotify Playlist
-                            Creator</a> as the name suggests is an app created with React which allows users to search
-                        Spotify's DB, create a playlist by adding and removing tracks, name it and eventually save it to
-                        their account. It utilizes <a
+                            Creator</a> is an app created with React which allows users to search
+                        Spotify's DB, create a playlist by adding and removing tracks, give it a name and eventually
+                        save it to their
+                        actual Spotify account. It utilizes <a
                             href="https://developer.spotify.com/documentation/web-api/tutorials/implicit-flow"
                             target="_blank">Implicit Grant Flow</a> meaning that the process of logging in / obtaining
                         JWT is carried out entirely on the client side. The app will ask the user to log in and
                         grant access to their account (scope is limited to 'playlist-modify-private
                         playlist-modify-public'). If approved Spotify will respond with an URL containing a hash from
-                        which an access token and related data can be derived. Then the user can perform searches,
-                        add/remove tracks to their project and eventually save it in their actual Spotify account. </p>
+                        which an access token and related data can be derived. </p>
                 </div>
 
                 <div class="portfolio-card">

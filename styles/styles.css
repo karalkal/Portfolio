@@ -252,11 +252,11 @@ div.portfolio-card {
     background-color: #2e2e2e;
 }
 
-div.portfolio-card>img {
+div.portfolio-card img {
     width: 100%;
 }
 
-div.portfolio-card>p {
+div.portfolio-card p {
     font-size: 19px;
 }
 

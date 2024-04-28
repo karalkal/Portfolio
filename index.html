@@ -206,25 +206,29 @@
                             src="./images/projects/Vinylarium-front-end.jpg"
                             alt="composite image of screenshots from front end app Vinylarium"></a>
                     <p>Vinylarium is a mock online shop for vinyls. <a href="https://vinylarium.onrender.com/"
-                            target="_blank">This</a> is the front end app built with React.
+                            target="_blank">This</a> is the front end app built with React. (Please note, back end
+                        server is hosted under Render's free tier, hence it needs approx. 30 seconds to spin up and
+                        send response.)
                         Users can register, log in (including with Google credentials), browse the catalogue, manipulate
                         their cart and place orders after simulated payment. Apart from this users with admin privileges
-                        (the back endconfirms/rejects this) have access to admin interface, allowing them to performing
-                        CRUD operations on the DB, e.g. adding new items to the catalogue, editing or deleting users
-                        etc.
+                        (the back end confirms/rejects the requests depending on the submitted JWT) have access to admin
+                        interface, allowing them to perform CRUD operations on the DB, e.g. adding new items to the
+                        catalogue, editing or deleting users etc.
                     </p>
                 </div>
 
                 <div class="portfolio-card">
-                    <img src="./images/projects/Vinylarium-front-end.jpg"
-                        alt="composite image of screenshots from front end app Vinylarium">
-                    <p>Vinylarium is a mock online shop for vinyls. <a href="https://vinylarium.onrender.com/"
-                            target="_blank">This is the front end app</a> built with React.
-                        Users can register, log in (including with Google credentials), browse the catalogue, manipulate
-                        their cart and place orders after simulated payment. Apart from this users with admin privileges
-                        (the back endconfirms/rejects this) have access to admin interface, allowing them to performing
-                        CRUD operations on the DB, e.g. adding new items to the catalogue, editing or deleting users
-                        etc.
+                    <a href="https://vinyl-shop.onrender.com/" target="_blank">
+                        <img src="./images/projects/Vinyl-shop-back-end.jpg"
+                            alt="composite image of screenshots from back end app Vinyl-shop"></a>
+                    <p><a href="https://vinyl-shop.onrender.com/" target="_blank"></a>The back end of the shop </a>
+                        was created with React JS. The app connects to a Postgres DB (hosted at ElephantSQL) and
+                        provides more endpoints than the front end currently utilizes. The ERD can be seen <a
+                            href="https://ibb.co/bPX8JcG" target="_blank">here</a>. The DB design uses intermediary
+                        tables to avoid many2many relations between some entities, e.g. album/order. Dedicated
+                        middlewares are used to verify users' authentication credentials and admin privileges, while
+                        passwords are stored in encrypted format. OAuth 2.0 via Google is also implemented.
+                        </a>
                     </p>
                 </div>
 
@@ -294,23 +298,8 @@
                             alt="composite image of screenshots from project Notes"></a>
                     <p><a href="https://darling-druid-32ec95.netlify.app" target="_blank">Notes</a> is a
                         React Markdown Editor which can be used for creating documentation/readme files. It is based on
-                        the 'react-mde' package. The goal was to illustrate how the useEffect() hook works: The program
-                        maintains/updates state of [notes] array locally and writes it in localStorage each time it is
-                        modified (i.e. [notes] is the dependancy array). This way the DB/localStorage does not need
-                        to be read each time the App is re-rendered.
-                    </p>
-                </div>
-
-                <div class="portfolio-card">
-                    <img src="./images/projects/Vinylarium-front-end.jpg"
-                        alt="composite image of screenshots from front end app Vinylarium">
-                    <p>Vinylarium is a mock online shop for vinyls. <a href="https://vinylarium.onrender.com/"
-                            target="_blank">This is the front end app</a> built with React.
-                        Users can register, log in (including with Google credentials), browse the catalogue, manipulate
-                        their cart and place orders after simulated payment. Apart from this users with admin privileges
-                        (the back endconfirms/rejects this) have access to admin interface, allowing them to performing
-                        CRUD operations on the DB, e.g. adding new items to the catalogue, editing or deleting users
-                        etc.
+                        the 'react-mde' package. The program maintains/updates state of [notes] array locally and writes
+                        it in localStorage each time it is modified.
                     </p>
                 </div>
 

@@ -89,6 +89,10 @@
                 </span>
             </div>
             <div><i class="fa fa-terminal bulletpoint" aria-hidden="true"></i>
+                <span>Completed the Full-Stack Engineer Path @ Codecademy (2023 - 2024)
+                </span>
+            </div>
+            <div><i class="fa fa-terminal bulletpoint" aria-hidden="true"></i>
                 <span> Passionate about music, cinema, winter and water sports, traveling and exploring
                 </span>
             </div>
@@ -162,7 +166,7 @@
 
             <a href="./images/resume.pdf" target="_blank">
                 <button class="download-resume-btn">
-                    <i class="fa fa-download"></i><span>View My Résumé</span>
+                    <i class="fa fa-download"></i><span>View My CV</span>
                 </button>
             </a>
         </section>
@@ -205,10 +209,10 @@
                     <a href="https://vinylarium.onrender.com/" target="_blank"><img
                             src="./images/projects/Vinylarium-front-end.jpg"
                             alt="composite image of screenshots from front end app Vinylarium"></a>
-                    <p>Vinylarium is a mock online shop for vinyls. <a href="https://vinylarium.onrender.com/"
-                            target="_blank">This</a> is the front end app built with React. (Please note, back end
+                    <p><a href="https://vinylarium.onrender.com/" target="_blank">Vinylarium</a> is a mock online shop
+                        for vinyls. The front end app has been created with React. (Please note, the back end
                         server is hosted under Render's free tier, hence it needs approx. 30 seconds to spin up and
-                        send response.)
+                        send its first response.)
                         Users can register, log in (including with Google credentials), browse the catalogue, manipulate
                         their cart and place orders after simulated payment. Apart from this users with admin privileges
                         (the back end confirms/rejects the requests depending on the submitted JWT) have access to admin
@@ -221,13 +225,31 @@
                     <a href="https://vinyl-shop.onrender.com/" target="_blank">
                         <img src="./images/projects/Vinyl-shop-back-end.jpg"
                             alt="composite image of screenshots from back end app Vinyl-shop"></a>
-                    <p><a href="https://vinyl-shop.onrender.com/" target="_blank"></a>The back end of the shop </a>
+                    <p><a href="https://vinyl-shop.onrender.com/" target="_blank">The back end of the shop</a>
                         was created with Express JS. The app connects to a Postgres DB (hosted at ElephantSQL) and
-                        provides more endpoints than the front end currently utilizes. The ERD can be seen <a
+                        provides additional endpoints to the ones currently in use. The ERD can be seen <a
                             href="https://ibb.co/bPX8JcG" target="_blank">here</a>. The DB design uses intermediary
                         tables to avoid many-to-many relations between some entities, e.g. album/order. Dedicated
                         middlewares are used to verify users' authentication credentials and admin privileges, while
                         passwords are stored in encrypted format. OAuth 2.0 via Google is also implemented.
+                    </p>
+                </div>
+
+                <div class="portfolio-card">
+                    <a href="https://karaliev.art/" target="_blank">
+                        <img src="./images/projects/Gazetteer.jpg"
+                            alt="composite image of screenshots from Gyzytti"></a>
+                    <p><a href="https://karaliev.art/" target="_blank">Gazetteer</a> is an app displaying interactive
+                        maps of any country based on device location or user selection, as well as essential information
+                        about it. It is based on the Leaflet
+                        JavaScript library and additional plugins for it. The front end utilizes jQuery for the
+                        traversal and manipulation of the webpage, the event handling and sending the AJAX
+                        requests to the server. The backend itself is written if PHP - dedicated modules get data from
+                        a variety of APIs (REST Countries, World Bank, GeoNames, OpenWeatherMap, ExchangeRate-API,
+                        Country InfoAPI) as well as from local files. This data is
+                        then filtered, processed and rendered as a modal. Users can also switch between 4 main overlays
+                        (i.e. map types), as well as select additional overlays - railway routes, main cities,
+                        earthquakes, wikipedia articles, the latter being grouped in clusters.
                         </a>
                     </p>
                 </div>

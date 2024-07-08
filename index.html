@@ -73,10 +73,14 @@
         <!-- About + Skills Section-->
         <section id="about">
             <h2>About Me</h2>
-            <hr />
+            <hr>
             <div> <i class="fa fa-terminal bulletpoint" aria-hidden="true"></i>
                 <span>Junior programmer with strong interest in web development, coding languages,
                     computer networking and data science
+                </span>
+            </div>
+            <div> <i class="fa fa-terminal bulletpoint" aria-hidden="true"></i>
+                <span>Based in Kingston upon Thames, London, UK
                 </span>
             </div>
             <div> <i class="fa fa-terminal bulletpoint" aria-hidden="true"></i>
@@ -100,7 +104,7 @@
 
         <section> <!-- this section has no id - it is part of about actually-->
             <h2>Tech Stack</h2>
-            <hr />
+            <hr>
             <div class="galley-grid">
                 <div class="card">
                     <img src="./images/tech-logos/css3_logo.png" alt="html and css logo" />
@@ -165,8 +169,8 @@
             </div> <!--Gallery end-->
 
             <a href="./images/resume.pdf" target="_blank">
-                <button class="download-resume-btn">
-                    <i class="fa fa-download"></i><span>View My CV</span>
+                <button id="downloadResumeBtn">
+                    <i class="fa fa-download"></i><span>View CV</span>
                 </button>
             </a>
         </section>
@@ -174,7 +178,7 @@
         <!-- Portfolio Section -->
         <section id="portfolio">
             <h2>My Projects</h2>
-            <hr />
+            <hr>
 
             <div id="projects">
 
@@ -239,7 +243,8 @@
                     <a href="https://karaliev.art/" target="_blank">
                         <img src="./images/projects/Gazetteer.jpg"
                             alt="composite image of screenshots from Gyzytti"></a>
-                    <p><a href="https://karaliev.art/gazetteer/" target="_blank">Gazetteer</a> is an app displaying interactive
+                    <p><a href="https://karaliev.art/gazetteer/" target="_blank">Gazetteer</a> is an app displaying
+                        interactive
                         maps of any country based on device location or user selection, as well as essential information
                         about it. It is based on the Leaflet
                         JavaScript library and additional plugins for it. The front end utilizes jQuery for the
@@ -331,22 +336,30 @@
         <!-- Contact Section -->
         <section id="contact">
             <h2>Contact Me</h2>
-            <hr />
+            <hr>
 
-            <div>
-                <a href="https://www.google.co.uk/maps/place/Kingston+upon+Thames+KT2/@51.4212412,-0.2982784,14z/data=!3m1!4b1!4m6!3m5!1s0x4876093778987453:0x33a6da15c1c9982e!8m2!3d51.4174912!4d-0.2843022!16s%2Fg%2F11bw3frpmz"
-                    target="_blank">
-                    <i class="fa fa-map-marker fa-fw"></i>
-                    <span>Based in Kingston upon Thames, London, UK</span>
-                </a>
-            </div>
-            <!-- <div><i class="fa fa-phone fa-fw"></i>Phone: +44 8888888</div> -->
-            <div>
-                <i class="fa fa-envelope fa-fw"></i>
-                <span>Email: kurcho1944@gmail.com</span>
-                </p>
-            </div>
-            <div>
+            <form action="send_email.php" method="post" id="contact-form">
+
+                <div id="form-nameDiv">
+                    <!-- <label for="firstName">First Name:</label> -->
+                    <input type="text" id="firstName" name="firstName" required placeholder="Name:">
+                </div>
+                <div id="form-emailDiv">
+                    <!-- <label for="email"></label> -->
+                    <input type="email" id="email" name="email" required placeholder="Email Address:">
+                </div>
+
+                <div id="form-messageDiv">
+                    <!-- <label for="message">Message:</label> -->
+                    <textarea id="message" name="message" required placeholder="Message:"></textarea>
+                </div>
+                <button id="form-sendBtn">
+                    <i class="fa fa-paper-plane" aria-hidden="true"></i><span>Send</span>
+                </button>
+
+            </form>
+
+            <div id="socialMediaIconsDiv">
                 <a href="https://www.facebook.com/kalin.ka.52">
                     <i class="fa fa-facebook-official fa-fw contact-icon"></i></a>
 
@@ -355,11 +368,16 @@
 
                 <a href="https://www.linkedin.com/in/kalin-karaliev-85019923a/">
                     <i class="fa fa-linkedin fa-fw contact-icon"></i></a>
+
+                <a href="https://www.google.co.uk/maps/place/Kingston+upon+Thames+KT2/@51.4212412,-0.2982784,14z/data=!3m1!4b1!4m6!3m5!1s0x4876093778987453:0x33a6da15c1c9982e!8m2!3d51.4174912!4d-0.2843022!16s%2Fg%2F11bw3frpmz"
+                    target="_blank">
+                    <i class="fa fa-map-marker fa-fw contact-icon"></i> </a>
             </div>
+
         </section>
     </main>
 
-    <!-- JS to change appearance of menu depending on which item is selected -->
+    <!-- JS to change appearance of menu btn after item is selected -->
     <script>
         let sidemenu = document.querySelectorAll(".sidemenu a")
         let topmenu = document.querySelectorAll(".topmenu a")

@@ -26,7 +26,7 @@ body {
 }
 
 a {
-    color: inherit
+    color: inherit;
 }
 
 hr {
@@ -37,7 +37,6 @@ hr {
 }
 
 #site-logo {
-    /* border-bottom: 1px solid black; */
     width: 100%;
     padding: 11px 6px;
 }
@@ -137,10 +136,9 @@ section>h2 {
 section#about i {
     font-size: 31px;
     line-height: 0px;
-    margin-right: 8px
+    margin-right: 8px;
 }
 
-/* there must be a more intelligent way to ensure download icon changes color upon hover? */
 section#about .bulletpoint {
     color: #690000;
 }
@@ -173,66 +171,36 @@ section#about span {
     padding: 11px 0 0 0;
 }
 
-.download-resume-btn {
+#downloadResumeBtn,
+#form-sendBtn {
     color: #690000;
     padding: 15px 22px 6px;
     float: right;
     border-radius: 4px;
     border-style: none;
+    height: 53px;
 }
 
-.download-resume-btn:hover {
+
+#downloadResumeBtn:hover,
+#form-sendBtn:hover {
     transition: background-color 1.3s, color 1.3s;
     background-color: #690000;
     color: white;
+    cursor: pointer;
 }
 
-.download-resume-btn>i {
+#downloadResumeBtn>i,
+#form-sendBtn>i {
     font-size: 26px;
 }
 
-.download-resume-btn>span {
+#downloadResumeBtn>span,
+#form-sendBtn>span {
     vertical-align: top;
     font-size: 17px;
     margin-left: 8px;
     font-weight: 600;
-}
-
-section#contact div {
-    color: #fff;
-    margin: 35px 0;
-    display: table;
-}
-
-section#contact a {
-    text-decoration: none;
-}
-
-section#contact i {
-    display: table-cell;
-    vertical-align: middle;
-    text-align: left;
-    font-size: 36px;
-}
-
-section#contact span {
-    font-size: 22px;
-    display: table-cell;
-    vertical-align: middle;
-    text-align: left;
-    position: relative;
-    left: 30px
-}
-
-section#contact .contact-icon {
-    font-size: 40px;
-    padding: 11px 88px 88px 0;
-}
-
-section#contact .contact-icon:hover,
-section#contact a>i:hover {
-    transition: color 1.3s;
-    color: #690000;
 }
 
 section#portfolio {
@@ -258,6 +226,67 @@ div.portfolio-card img {
 
 div.portfolio-card p {
     font-size: 19px;
+}
+
+#contact-form {
+    width: 100%;
+    margin: 22px 0;
+    padding: 17px;
+    background-color: #2e2e2e;
+    display: grid;
+    gap: 35px 35px;
+    grid-template-areas: "name name name email email email"
+        "message message message message message button";
+    justify-items: stretch;
+    align-items: stretch;
+}
+
+#contact-form input,
+#contact-form textarea {
+    padding: 8px 8px;
+    width: 100%;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+    outline: #690000 solid 4px;
+}
+
+#contact-form textarea {
+    height: 240px;
+}
+
+#form-nameDiv {
+    grid-area: name;
+}
+
+#form-emailDiv {
+    grid-area: email;
+}
+
+#form-messageDiv {
+    grid-area: message;
+}
+
+#form-sendBtn {
+    grid-area: button;
+}
+
+#socialMediaIconsDiv {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 17px;
+}
+
+#socialMediaIconsDiv .contact-icon {
+    font-size: 44px;
+}
+
+#socialMediaIconsDiv .contact-icon:hover,
+#socialMediaIconsDiv a>i:hover {
+    transition: color 1.3s;
+    color: #690000;
 }
 
 
@@ -326,25 +355,14 @@ div.portfolio-card p {
         padding: 4px 0 0 0;
     }
 
-    .download-resume-btn {
+    #downloadResumeBtn {
         padding: 13px 11px 0;
         float: left;
     }
 
-    .download-resume-btn>span {
+    #downloadResumeBtn>span,
+    #form-sendBtn>span {
         font-size: 15px;
-    }
-
-    section#contact div {
-        margin: 19px 0;
-    }
-
-    section#contact span {
-        font-size: 15px;
-    }
-
-    section#contact .contact-icon {
-        padding: 11px 62px 35px 0;
     }
 
     section#portfolio {
@@ -365,6 +383,18 @@ div.portfolio-card p {
     div.portfolio-card>p {
         font-size: 15px;
         height: auto;
+    }
+
+    #contact-form {
+        display: block;
+    }
+
+    #contact-form div {
+        margin-bottom: 17px;
+    }
+
+    #socialMediaIconsDiv .contact-icon {
+        font-size: 31px;
     }
 }
 
@@ -437,21 +467,9 @@ div.portfolio-card p {
         font-size: 14px;
     }
 
-    .download-resume-btn {
+    #downloadResumeBtn,
+    #form-sendBtn {
         padding: 8px 11px 1px;
-    }
-
-    section#contact div {
-        margin: 11px 0;
-    }
-
-    section#contact i {
-        font-size: 31px;
-    }
-
-    section#contact span {
-        font-size: 15px;
-        left: 17px
     }
 
     div.portfolio-card {
@@ -464,6 +482,18 @@ div.portfolio-card p {
     div.portfolio-card>p {
         height: auto;
         font-size: 15px;
+    }
+
+    #contact-form {
+        display: block;
+    }
+
+    #contact-form div {
+        margin-bottom: 17px;
+    }
+
+    #socialMediaIconsDiv .contact-icon {
+        font-size: 31px;
     }
 }
 
@@ -536,22 +566,13 @@ div.portfolio-card p {
         font-size: 14px;
     }
 
-    .download-resume-btn {
-        margin-top: 26px;
+    #downloadResumeBtn,
+    #form-sendBtn {
         padding: 8px 11px 1px;
     }
 
-    section#contact div {
-        margin: 11px 0;
-    }
-
-    section#contact i {
-        font-size: 31px;
-    }
-
-    section#contact span {
-        font-size: 15px;
-        left: 17px
+    #socialMediaIconsDiv .contact-icon {
+        font-size: 35px;
     }
 }
 

@@ -147,7 +147,7 @@ section#about span {
     font-size: 24px;
 }
 
-.galley-grid {
+.techstack-grid {
     margin: 35px 0;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(64px, 1fr));
@@ -204,7 +204,7 @@ section#about span {
 }
 
 section#portfolio {
-    margin-top: 62px;
+    margin-top: 107px;
 }
 
 section#portfolio>div#projects {
@@ -213,18 +213,18 @@ section#portfolio>div#projects {
     justify-content: space-between;
 }
 
-div.portfolio-card {
+.portfolio-card {
     width: 48%;
     margin: 22px 0;
     padding: 6px;
     background-color: #2e2e2e;
 }
 
-div.portfolio-card img {
+.portfolio-card img {
     width: 100%;
 }
 
-div.portfolio-card p {
+.portfolio-card p {
     font-size: 19px;
 }
 
@@ -346,7 +346,7 @@ div.portfolio-card p {
         font-size: 17px
     }
 
-    .galley-grid {
+    .techstack-grid {
         gap: 2rem 4rem;
     }
 
@@ -373,7 +373,7 @@ div.portfolio-card p {
         display: block;
     }
 
-    div.portfolio-card {
+    .portfolio-card {
         width: 100%;
         margin: 22px 0;
         padding: 6px;
@@ -391,6 +391,15 @@ div.portfolio-card p {
 
     #contact-form div {
         margin-bottom: 17px;
+    }
+
+    #contact-form input:focus,
+    #contact-form textarea:focus {
+        outline: #690000 solid 2px;
+    }
+
+    #contact-form textarea {
+        height: 130px;
     }
 
     #socialMediaIconsDiv .contact-icon {
@@ -457,10 +466,10 @@ div.portfolio-card p {
         font-size: 17px;
     }
 
-    .galley-grid {
+    .techstack-grid {
         margin: 11px 0 22px 0;
-        grid-template-columns: repeat(auto-fill, minmax(31px, 1fr));
-        gap: 2rem 4rem;
+        grid-template-columns: repeat(6, minmax(35px, 1fr));
+        gap: 2rem 2.4rem;
     }
 
     .card>p {
@@ -472,7 +481,7 @@ div.portfolio-card p {
         padding: 8px 11px 1px;
     }
 
-    div.portfolio-card {
+    .portfolio-card {
         width: 48%;
         margin: 22px 0;
         padding: 6px;
@@ -486,6 +495,15 @@ div.portfolio-card p {
 
     #contact-form {
         display: block;
+    }
+
+    #contact-form input:focus,
+    #contact-form textarea:focus {
+        outline: #690000 solid 2px;
+    }
+
+    #contact-form textarea {
+        height: 130px;
     }
 
     #contact-form div {
@@ -503,22 +521,12 @@ div.portfolio-card p {
         width: 80px;
     }
 
-    #site-logo {
-        border-bottom: none;
-        padding: 4px 8px;
-    }
-
     .menubar-item {
-        background-color: #2e2e2e;
         font-size: 11px;
-        color: #fff;
         padding: 8px 11px;
     }
 
-    .menubar-item>i {
-        font-size: 35px;
-    }
-
+    
     .heading {
         padding-top: 17px;
     }
@@ -553,22 +561,37 @@ div.portfolio-card p {
     }
 
     section#about span {
-        font-size: 17px;
+        font-size: 19px;
     }
 
-    .galley-grid {
+    .techstack-grid {
         margin: 26px 0 22px 0;
         grid-template-columns: repeat(auto-fill, minmax(44px, 1fr));
-        gap: 3rem 6rem;
+        gap: 3rem 4rem;
     }
 
-    .card>p {
-        font-size: 14px;
+    .portfolio-card p {
+        font-size: 17px;
     }
 
     #downloadResumeBtn,
     #form-sendBtn {
         padding: 8px 11px 1px;
+        height: 40px;
+    }
+
+    #contact-form input:focus,
+    #contact-form textarea:focus {
+        outline: #690000 solid 2px;
+    }
+
+    #contact-form {
+        margin: 17px 0;
+        gap: 17px;
+    }
+
+    #contact-form textarea {
+        height: 190px;
     }
 
     #socialMediaIconsDiv .contact-icon {

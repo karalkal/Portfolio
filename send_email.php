@@ -1,8 +1,11 @@
 <?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-require 'vendor/autoload.php';
+require './vendor/autoload.php';
 
 $errors = [];
 $errorMessage = ' ';
@@ -35,6 +38,7 @@ if (!empty($_POST)) {
     } else {
         $fromEmail = 'my_form@karaliev.art';
         $emailSubject = 'New email from your contact form';
+        $myOwnEmail = 'kurcho1944@gmail.com';
 
         // Create a new PHPMailer instance
         $mail = new PHPMailer(exceptions: true);
@@ -50,7 +54,7 @@ if (!empty($_POST)) {
 
             // Set the sender, recipient, subject, and body of the message 
             // $mail->addAddress("somegmailaccount@gmail.com", "Elvis");
-            $mail->addAddress($email);
+            $mail->addAddress($myOwnEmail);
             $mail->setFrom($fromEmail);
             $mail->Subject = $emailSubject;
             $mail->isHTML(isHtml: true);

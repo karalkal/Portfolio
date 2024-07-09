@@ -48,7 +48,7 @@ if (!empty($_POST)) {
             $mail->Host = 'live.smtp.mailtrap.io';
             $mail->SMTPAuth = true;
             $mail->Username = 'api';
-            $mail->Password = '87a05b808f42d137232b0cd35cbecccb';
+            $mail->Password = 'enter password';
             $mail->SMTPSecure = 'tls';
             $mail->Port = 587;
 

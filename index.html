@@ -338,7 +338,7 @@
             <h2>Contact Me</h2>
             <hr>
 
-            <form action="send_email.php" method="post" id="contact-form">
+            <form action="" method="post" id="contact-form">
 
                 <div id="form-nameDiv">
                     <!-- <label for="firstName">First Name:</label> -->
@@ -376,24 +376,27 @@
 
         </section>
     </main>
+    <!-- jQuery CDN -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+    <!-- JS dealing with pre- and post- email sending-->
+    <script type="text/javascript" src="send_email.js"></script>
 
     <!-- JS to change appearance of menu btn after item is selected -->
     <script>
         let sidemenu = document.querySelectorAll(".sidemenu a")
         let topmenu = document.querySelectorAll(".topmenu a")
         let linksArr = Array.from(sidemenu).slice(1).concat(Array.from(topmenu))     //exclude first Node,the logo
-        console.log(linksArr)
+
         for (let child of linksArr) {
             //  console.log(child)
             child.addEventListener('click', (event) => {
 
                 for (let child of linksArr) {
-                    console.log(child)
                     child.classList.remove("menubar-item-selected")
                 }
 
                 event.currentTarget.classList.add("menubar-item-selected")
-                console.log(event.currentTarget.classList)
             })
         }
     </script>
